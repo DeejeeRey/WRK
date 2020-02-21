@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/userPhotoIV"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/default_user"
+        app:civ_border_width="5dp"
+        app:civ_border_color="@color/colorOrangeDark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/firstnameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/userPhotoIV"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/secondnameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/firstnameET"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Second Name"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/usernameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/secondnameET"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameET"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/passET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailET"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/passConfET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passET"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="136dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/passConfET"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passConfET"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
